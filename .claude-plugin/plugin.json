@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "claude-grimoire",
+  "displayName": "Claude Grimoire",
+  "version": "0.1.0",
+  "description": "A personal grimoire of Claude Code subagents - recipes for summoning specialized helpers.",
+  "author": {
+    "name": "lov3g00d",
+    "email": "zamkovoy99@gmail.com",
+    "url": "https://github.com/lov3g00d"
+  },
+  "repository": "https://github.com/lov3g00d/claude-grimoire",
+  "license": "MIT",
+  "keywords": ["claude-code", "subagents", "jarvis"]
+}
