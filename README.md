@@ -9,6 +9,7 @@ A personal grimoire of [Claude Code](https://docs.claude.com/en/docs/claude-code
 | [`jarvis`](agents/jarvis.md) | Mission-control orchestrator. Runs the full explore→plan→execute→verify loop in its own context and returns one actionable result. Best for outcome-described, multi-step briefs (`"the build is broken"`, `"design the migration plan"`). |
 | [`moriarty`](agents/moriarty.md) | Offensive-security counsel. Recon planning, attack-surface mapping, and exploit reasoning on authorized targets (your systems, written scope, CTF/HTB). Requires authorization context before substantive analysis; refuses unauthorized targets. |
 | [`heimdall`](agents/heimdall.md) | Defensive-security counsel. Hardening, detection engineering, and IR for systems you own or operate. Writes the rules and runbooks (sigma, yara, suricata, falco, audit) rather than just describing them. |
+| [`chiron`](agents/chiron.md) | Offensive-security mentor. Methodology coach for picking the right surface frame, phase, and tool category with their counter-indications. Teaches the craft (PTES, OWASP WSTG, MASTG, NIST SP 800-115, OSSTMM); hands off to `moriarty` for authorized-target work. |
 
 ## Install
 
