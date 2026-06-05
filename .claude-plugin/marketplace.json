@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "grimoire",
+  "description": "Personal catalog for the claude-grimoire subagents.",
+  "owner": {
+    "name": "lov3g00d",
+    "email": "zamkovoy99@gmail.com",
+    "url": "https://github.com/lov3g00d"
+  },
+  "plugins": [
+    {
+      "name": "claude-grimoire",
+      "source": "./",
+      "description": "A personal grimoire of Claude Code subagents - recipes for summoning specialized helpers."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Claude Grimoire
 
-A personal grimoire of [Claude Code](https://docs.claude.com/en/docs/claude-code) subagents - recipes for summoning specialized helpers.
+A personal grimoire of [Claude Code](https://code.claude.com/docs/en/overview) subagents - recipes for summoning specialized helpers.
 
 ## Agents
 
@@ -13,21 +13,26 @@ A personal grimoire of [Claude Code](https://docs.claude.com/en/docs/claude-code
 
 ## Install
 
-This repository follows the [Claude Code plugin layout](https://code.claude.com/docs/en/plugins-reference). Install it as a plugin via a marketplace, or symlink the agents into your user directory.
+This repository is both a [Claude Code plugin](https://code.claude.com/docs/en/plugins-reference) and its own [marketplace](https://code.claude.com/docs/en/plugin-marketplaces). Install it as a plugin, or symlink the agents into your user directory. Either way you need a Claude Code version with plugin support (run `/plugin`; if the command is missing, update Claude Code).
 
 ### As a plugin (recommended)
 
-1. Add this repository as a plugin marketplace source: `/plugin marketplace add lov3g00d/claude-grimoire`
-2. Install: `/plugin install claude-grimoire`
+1. Add the marketplace: `/plugin marketplace add lov3g00d/claude-grimoire`
+2. Install the plugin: `/plugin install claude-grimoire@grimoire`
+
+The marketplace registers under the name `grimoire`; the plugin it serves is `claude-grimoire`.
 
 ### As a symlink (fast path)
 
 ```sh
 git clone git@github.com:lov3g00d/claude-grimoire.git ~/Projects/personal/claude-grimoire
-ln -s ~/Projects/personal/claude-grimoire/agents/jarvis.md ~/.claude/agents/jarvis.md
+mkdir -p ~/.claude/agents
+for a in ~/Projects/personal/claude-grimoire/agents/*.md; do
+  ln -s "$a" ~/.claude/agents/
+done
 ```
 
-Restart Claude Code to pick up the new agent file.
+Restart Claude Code to pick up the new agent files.
 
 ## Use
 
@@ -35,7 +40,7 @@ Restart Claude Code to pick up the new agent file.
 @agent-jarvis investigate why the build is failing and fix it
 ```
 
-Or natural language: `Jarvis, …`. For an explicit whole-session default: `claude --agent jarvis`.
+Symlinked agents are invoked by their bare name (`@agent-jarvis`). Plugin-installed agents are scoped by the plugin name (`@agent-claude-grimoire:jarvis`). Natural language works too: `Jarvis, …`. For an explicit whole-session default: `claude --agent jarvis`.
 
 ## License
 
