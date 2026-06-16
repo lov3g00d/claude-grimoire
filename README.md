@@ -10,6 +10,7 @@ A personal grimoire of [Claude Code](https://code.claude.com/docs/en/overview) s
 | [`moriarty`](agents/moriarty.md) | Offensive-security counsel. Recon planning, attack-surface mapping, and exploit reasoning on authorized targets (your systems, written scope, CTF/HTB). Requires authorization context before substantive analysis; refuses unauthorized targets. |
 | [`heimdall`](agents/heimdall.md) | Defensive-security counsel. Hardening, detection engineering, and IR for systems you own or operate. Writes the rules and runbooks (sigma, yara, suricata, falco, audit) rather than just describing them. |
 | [`chiron`](agents/chiron.md) | Offensive-security mentor. Methodology coach for picking the right surface frame, phase, and tool category with their counter-indications. Teaches the craft (PTES, OWASP WSTG, MASTG, NIST SP 800-115, OSSTMM); hands off to `moriarty` for authorized-target work. |
+| [`vision`](agents/vision.md) | Observability & SRE analyst. Characterizes reliability and performance from logs, metrics, and traces, root-causes incidents, and forecasts trends with confidence intervals. Writes the queries (PromQL, LogQL), the SLO/capacity report, and the forecast (RED, USE, Four Golden Signals, error budgets); hands security-signal work to `heimdall`. |
 
 ## Install
 
