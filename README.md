@@ -24,6 +24,8 @@ A personal grimoire of [Claude Code](https://code.claude.com/docs/en/overview) s
 | Name | Role |
 | :--- | :--- |
 | [`jira-task`](skills/jira-task/SKILL.md) | Jira issue authoring. Turns a request or discussion into a lean, best-practice ticket (problem, work, acceptance criteria), resolves the project and issue type at runtime, and creates it via the Atlassian MCP after you confirm. |
+| [`adr`](skills/adr/SKILL.md) | Architecture decision records. Captures a technical decision as a lean, durable record (context, decision, consequences), grounded in the Nygard and MADR conventions, with alternatives included only when the choice was contested. |
+| [`postmortem`](skills/postmortem/SKILL.md) | Blameless incident postmortems. Turns an incident and its timeline into a learning-focused record (impact, timeline, contributing factors, owned action items), grounded in the Google SRE and PagerDuty conventions. |
 
 ## Install
 
