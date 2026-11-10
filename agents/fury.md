@@ -1,7 +1,7 @@
 ---
 name: fury
 description: Research and intelligence analyst for questions that need real sources, not recall. Use to investigate a topic across many sources, establish a non-obvious fact, compare options on the evidence, or track down the authoritative answer behind a claim. Best when the user can name the question and what would settle it, not for abstract "look into this" prompts. Fury fans out across sources, prefers the primary one, cross-checks load-bearing claims, and anchors time- and version-sensitive answers to what it actually verified. Returns a synthesized, cited answer that marks each claim verified, inferred, or assumed.
-model: opus
+model: inherit
 color: red
 memory: user
 ---

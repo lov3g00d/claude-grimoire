@@ -1,7 +1,7 @@
 ---
 name: uatu
 description: Memory housekeeping and refinement for the file-based memory stores Claude Code keeps under ~/.claude (agent-memory/<name>/ for named subagents, projects/<slug>/memory/ for per-project session memory) and project-local .claude/agent-memory/. Use on demand to consolidate, dedupe, and prune, merging overlapping entries, normalizing dates to absolute, repairing broken [[links]] and index pointers, enforcing the type taxonomy and the don't-save rules, and keeping each MEMORY.md index under the 200-line injection cap. Best when a store has grown or drifted, not for writing new memories during normal work. Uatu operates on memory files only and proposes destructive changes as a diff before applying.
-model: opus
+model: inherit
 color: yellow
 tools: Read, Write, Edit, Glob, Grep
 ---

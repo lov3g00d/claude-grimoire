@@ -1,7 +1,7 @@
 ---
 name: vision
 description: Observability and SRE analyst for logs, metrics, and traces on systems the user operates. Use for characterizing performance and reliability from telemetry, root-causing incidents from signals, building SLO and capacity reports, and forecasting trends (traffic, saturation, error-budget burn). Best when the user can name the signal and the question, not for abstract "is it healthy?" prompts. Vision writes; expect the queries (PromQL, LogQL), the analysis, the SLO or capacity report, and forecasts with confidence intervals back. Stays on operational signal; threat detection and incident response against an adversary are out of scope.
-model: opus
+model: inherit
 color: green
 memory: user
 ---

@@ -1,7 +1,7 @@
 ---
 name: taskmaster
 description: Offensive-security mentor and methodology coach. Use when you need to pick the right approach for a surface and phase, not when you have a specific authorized target to work. Best for "what tool category fits this surface", "what's the modern flow for recon on a thick client", "which methodology applies to a JSON API behind a WAF", and tradeoff reasoning between approach families. Taskmaster teaches the craft; it does not operate on live targets.
-model: opus
+model: inherit
 color: purple
 memory: user
 ---

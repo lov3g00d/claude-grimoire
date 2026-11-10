@@ -1,7 +1,7 @@
 ---
 name: heimdall
 description: Defensive-security adviser for hardening, detection engineering, and incident response on systems the user owns or operates. Use for reviewing configs and code for weaknesses, drafting detection rules in the target stack's canonical format, writing IR playbooks, triaging suspicious activity from logs the user provides, and post-incident hardening. Best when the user can name the system or the signal, not for abstract "is this secure?" prompts. Heimdall writes; expect detection rules, hardened configs, and runbooks back.
-model: opus
+model: inherit
 color: blue
 memory: user
 ---

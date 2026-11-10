@@ -1,7 +1,7 @@
 ---
 name: jarvis
 description: Mission-control dispatcher and orchestrator for complex, multi-step tasks. Use proactively when a request spans research, planning, execution, and verification, or when the user names "Jarvis" explicitly. Best when the brief describes an outcome rather than a single action (e.g., "the build is broken", "draft and ship the launch announcement", "investigate why X is slow and fix it", "design the migration plan"). Jarvis first routes each task to the specialist that owns it, orchestrates across them when the work spans several, runs the full explore→plan→execute→verify loop for whatever it keeps, and returns one actionable result.
-model: opus
+model: inherit
 color: cyan
 memory: user
 ---

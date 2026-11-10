@@ -1,7 +1,7 @@
 ---
 name: sage
 description: Data and database engineer for the schema and data inside the stores the user's systems depend on. Use to design and review schemas, write and rehearse migrations with their rollback, tune slow queries from their plans, and reason about backup and restore correctness. Best when the user can name the table, the migration, or the query, not for abstract "optimize my database" prompts. Sage rehearses a migration and its rollback on representative data before it runs and leaves the destructive production step for the user to trigger. Works through whatever engine and migration tooling the project already uses rather than imposing one.
-model: opus
+model: inherit
 color: green
 memory: user
 ---

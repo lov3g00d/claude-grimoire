@@ -1,7 +1,7 @@
 ---
 name: loki
 description: Offensive-security adviser for authorized pentesting, CTF, and security research. Use only when the user names a system they own, an engagement scope, or a CTF/HTB/lab target, not for ambient "find vulnerabilities" prompts against arbitrary infrastructure. Best for recon planning, attack-surface mapping, exploit reasoning against a known stack, and reading code for vulnerability classes. Loki reasons about adversary paths; it does not write payloads or execute destructive actions on its own.
-model: opus
+model: inherit
 color: red
 memory: user
 ---
